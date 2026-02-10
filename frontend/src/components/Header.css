@@ -1,0 +1,100 @@
+.header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 2rem;
+      font-family: 'Inter', sans-serif;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+}
+/* jr bg colour mange karych hai this is code */
+.header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+}
+
+.logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+}
+
+.logo-icon .dot-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 4px);
+      gap: 3px;
+}
+
+.logo-icon .dot-grid span {
+      width: 4px;
+      height: 4px;
+      background-color: #6c5ce7;
+      border-radius: 50%;
+      display: block;
+}
+
+.logo-icon .dot-grid span:nth-child(1) {
+      background-color: #a29bfe;
+}
+
+.logo-icon .dot-grid span:nth-child(5) {
+      background-color: #6c5ce7;
+}
+
+.logo-icon .dot-grid span:nth-child(9) {
+      background-color: #a29bfe;
+}
+
+
+.logo-text {
+      display: flex;
+      flex-direction: row;
+      /* Changed to row to align Technical and Club */
+      align-items: baseline;
+      /* Align text baselines */
+      gap: 5px;
+      line-height: 1;
+}
+
+.logo-text .innovation {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2d3436;
+      letter-spacing: -0.5px;
+}
+
+.logo-text .lab {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: #2d3436;
+}
+
+.navigation ul {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+}
+
+.navigation a {
+      text-decoration: none;
+      color: #2d3436;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+      color: #6c5ce7;
+}
+
+@media (max-width: 968px) {
+      .navigation {
+            display: none;
+      }
+}
