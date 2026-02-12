@@ -17,8 +17,8 @@ const Header = () => {
                               </div>
                               {/* phile nav ithe yel  */}
                               <div className="logo-text">
-                                    <span className="innovation">Fetch.ai</span>
-                                    <span className="lab"></span>
+                                    <span className="brand-name">Fetch.ai</span>
+                                    <span className="club-name">Developer Club</span>
                               </div>
                         </div>
                         <nav className="navigation">
