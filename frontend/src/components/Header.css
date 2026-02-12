@@ -1,13 +1,21 @@
 .header {
-      background-color: #ffffff;
-      border-bottom: 1px solid #e0e0e0;
-      padding: 1rem 2rem;
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 0.8rem 2rem;
       font-family: 'Inter', sans-serif;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 1200px;
       z-index: 1000;
+      border-radius: 20px;
 }
+/* ok */
+
 /* jr bg colour mange karych hai this is code */
 .header-container {
       display: flex;
@@ -30,47 +38,49 @@
 }
 
 .logo-icon .dot-grid span {
-      width: 4px;
-      height: 4px;
+      width: 5px;
+      height: 5px;
       background-color: #6c5ce7;
       border-radius: 50%;
       display: block;
 }
 
-.logo-icon .dot-grid span:nth-child(1) {
-      background-color: #a29bfe;
-}
-
-.logo-icon .dot-grid span:nth-child(5) {
-      background-color: #6c5ce7;
+/* Specific colors for the dots to match the 'innovation lab' logo style */
+/* Default is purple */
+.logo-icon .dot-grid span:nth-child(6) {
+      background-color: #ff7675;
+      /* Orange dot */
 }
 
 .logo-icon .dot-grid span:nth-child(9) {
-      background-color: #a29bfe;
+      background-color: #00b894;
+      /* Green dot */
 }
-
 
 .logo-text {
       display: flex;
-      flex-direction: row;
-      /* Changed to row to align Technical and Club */
-      align-items: baseline;
-      /* Align text baselines */
-      gap: 5px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
       line-height: 1;
 }
 
-.logo-text .innovation {
-      font-size: 1.5rem;
+.logo-text .brand-name {
+      font-size: 1.6rem;
       font-weight: 700;
-      color: #2d3436;
+      color: #0d1117;
+      /* Dark text */
       letter-spacing: -0.5px;
 }
 
-.logo-text .lab {
-      font-size: 1.5rem;
-      font-weight: 300;
-      color: #2d3436;
+.logo-text .club-name {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #6c5ce7;
+      /* Purple text */
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-left: 2px;
 }
 
 .navigation ul {
