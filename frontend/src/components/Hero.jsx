@@ -2,9 +2,7 @@ import React from 'react';
 import './Hero.css';
 
 // Placeholder or imported images would go here
-// For now using high-quality Unsplash placeholders if I can't move the generated ones yet
-// But I will try to use local assets if I can copy them. 
-// Let's assume we will have them in assets folder.
+
 
 const Hero = () => {
       return (
@@ -13,7 +11,7 @@ const Hero = () => {
                         <div className="hero-column">
                               <div className="image-wrapper">
                                     {/* Use the public folder path directly */}
-                                    <img src="/images/event_1.png" alt="Hackathon Event" />
+                                    <img src="/images/event1.jpeg" alt="Hackathon Event" />
                                     <div className="overlay"></div>
                               </div>
                         </div>
