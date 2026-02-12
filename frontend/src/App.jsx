@@ -7,6 +7,7 @@ import About from './components/About'
 import Teams from './components/Teams'
 import Gallery from './components/Gallery'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 
 // jste router use nahi kele ahe ajun 
@@ -23,6 +24,7 @@ function App() {
         <Gallery />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }
