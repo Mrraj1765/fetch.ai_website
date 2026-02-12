@@ -14,6 +14,7 @@
       z-index: 1000;
       border-radius: 20px;
 }
+
 /* ok */
 
 /* jr bg colour mange karych hai this is code */
@@ -93,9 +94,14 @@
 
 .navigation a {
       text-decoration: none;
-      color: #2d3436;
-      font-size: 0.95rem;
-      font-weight: 500;
+      color: #0d1117;
+      /* Darker, almost black */
+      font-size: 1.05rem;
+      /* Larger size */
+      font-weight: 600;
+      /* Bolder */
+      letter-spacing: 0.01em;
+      /* Slight spacing for readability */
       transition: color 0.2s ease;
 }
 
