@@ -4,6 +4,7 @@ import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
+import Teams from './components/Teams'
 
 
 // jste router use nahi kele ahe ajun 
@@ -16,6 +17,7 @@ function App() {
       <main className="main-content">
         <Hero />
         <About />
+        <Teams />
       </main>
     </div>
   )

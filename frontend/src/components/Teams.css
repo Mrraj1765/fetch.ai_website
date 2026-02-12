@@ -1,0 +1,212 @@
+.teams-section {
+      padding: 40px 2rem;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+}
+
+.teams-container {
+      max-width: 800px;
+      width: 100%;
+}
+
+.teams-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      text-align: center;
+      color: #1a1a2e;
+      margin-bottom: 1.5rem;
+      font-family: 'Inter', sans-serif;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Leadership Section */
+.leadership-section {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem 2rem;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.leader-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      transition: transform 0.4s ease;
+      padding: 0.3rem;
+}
+
+.leader-card:hover {
+      transform: translateY(-6px);
+}
+
+.leader-image-wrapper {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #ffffff;
+      box-shadow: 0 8px 20px rgba(26, 26, 46, 0.1);
+      transition: all 0.4s ease;
+      position: relative;
+}
+
+.leader-card:hover .leader-image-wrapper {
+      box-shadow: 0 12px 25px rgba(26, 26, 46, 0.18);
+      transform: scale(1.05);
+}
+
+.leader-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.leader-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0.2rem 0 0 0;
+      text-align: center;
+}
+
+.leader-role {
+      font-size: 0.75rem;
+      color: #6c757d;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin: 0;
+}
+
+.leader-socials {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 0.4rem;
+}
+
+/* LinkedIn Brand Color */
+.social-link:nth-child(1) {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #0077B5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 12px rgba(0, 119, 181, 0.2);
+}
+
+.social-link:nth-child(1):hover {
+      background: #005885;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 119, 181, 0.35);
+}
+
+/* GitHub Brand Color */
+.social-link:nth-child(2) {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #24292e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 12px rgba(36, 41, 46, 0.2);
+}
+
+.social-link:nth-child(2):hover {
+      background: #0d1117;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(36, 41, 46, 0.35);
+}
+
+.social-link svg {
+      width: 18px;
+      height: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+      .teams-section {
+            padding: 35px 1.5rem;
+      }
+
+      .teams-title {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+      }
+
+      .leadership-section {
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem 1.5rem;
+            border-radius: 18px;
+      }
+
+      .leader-image-wrapper {
+            width: 90px;
+            height: 90px;
+      }
+
+      .leader-card h3 {
+            font-size: 1.1rem;
+      }
+}
+
+@media (max-width: 640px) {
+      .teams-section {
+            padding: 30px 1rem;
+      }
+
+      .teams-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+      }
+
+      .leadership-section {
+            gap: 1.5rem;
+            padding: 1.5rem 1rem;
+            border-radius: 15px;
+      }
+
+      .leader-image-wrapper {
+            width: 85px;
+            height: 85px;
+            border-width: 2px;
+      }
+
+      .leader-card h3 {
+            font-size: 1rem;
+      }
+
+      .leader-role {
+            font-size: 0.7rem;
+      }
+
+      .social-link:nth-child(1),
+      .social-link:nth-child(2) {
+            width: 32px;
+            height: 32px;
+      }
+
+      .social-link svg {
+            width: 16px;
+            height: 16px;
+      }
+
+      .leader-socials {
+            gap: 0.5rem;
+      }
+}
