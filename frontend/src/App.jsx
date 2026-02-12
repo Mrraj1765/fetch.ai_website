@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
+import Hero from './components/Hero'
 
 
 // jste router use nahi kele ahe ajun 
@@ -13,7 +14,7 @@ function App() {
     <div className="app">
       <Header />
       <main className="main-content">
-       {/* new pages routes will add here so ithe taka */}
+        <Hero />
       </main>
     </div>
   )

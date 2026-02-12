@@ -1,0 +1,107 @@
+.hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background-color: #f5f5f7;
+      padding-top: 0;
+      /* Header is floating */
+}
+
+.hero-columns {
+      display: flex;
+      width: 100%;
+      height: 100%;
+}
+
+.hero-column {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      transition: flex 0.5s ease;
+}
+
+/* Removed hover expansion */
+.hero-column:hover {
+      /* flex: 1.5; removed */
+}
+
+.image-wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+}
+
+.image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+}
+
+/* Removed image zoom on hover */
+.hero-column:hover img {
+      /* transform: scale(1.05); removed */
+}
+
+.overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+      pointer-events: none;
+}
+
+.hero-content {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+}
+
+.view-all-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      color: #0d1117;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.view-all-btn:hover {
+      background-color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      color: #6c5ce7;
+}
+
+.view-all-btn svg {
+      transition: transform 0.3s ease;
+}
+
+.view-all-btn:hover svg {
+      transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+      .hero-columns {
+            flex-direction: column;
+      }
+
+      .hero-column:hover {
+            flex: 1;
+            /* Disable expansion on mobile */
+      }
+}
