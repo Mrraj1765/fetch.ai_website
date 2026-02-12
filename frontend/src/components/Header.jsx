@@ -24,9 +24,8 @@ const Header = () => {
                         <nav className="navigation">
                               <ul>
                                     <li><a href="#home">Home</a></li>
-                                    <li><a href="#team">Our Team</a></li>
-                                    <li><a href="#gallery">Gallery</a></li>
-                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#about">About Us</a></li>
+                                    <li><a href="#team">Team</a></li>
                                     <li><a href="#events">Events</a></li>
                                     <li><a href="#contact">Contact Us</a></li>
                               </ul>
