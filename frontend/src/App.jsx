@@ -5,6 +5,8 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import Teams from './components/Teams'
+import Gallery from './components/Gallery'
+import Contact from './components/Contact'
 
 
 // jste router use nahi kele ahe ajun 
@@ -18,6 +20,8 @@ function App() {
         <Hero />
         <About />
         <Teams />
+        <Gallery />
+        <Contact />
       </main>
     </div>
   )
