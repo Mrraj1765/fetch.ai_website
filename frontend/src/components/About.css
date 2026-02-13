@@ -53,7 +53,7 @@
       transition: all 0.5s ease;
       pointer-events: none;
 }
-
+/* image hower  */
 .about-image-box:hover .image-overlay {
       background: rgba(0, 0, 0, 0);
       backdrop-filter: blur(0px);
