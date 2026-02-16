@@ -53,6 +53,7 @@
       transition: all 0.5s ease;
       pointer-events: none;
 }
+
 /* image hower  */
 .about-image-box:hover .image-overlay {
       background: rgba(0, 0, 0, 0);
@@ -103,12 +104,12 @@
 .stat-number {
       font-size: 2rem;
       font-weight: 800;
-      color: #2d3436;
+      color: #000000;
 }
 
 .stat-label {
       font-size: 0.9rem;
-      color: #a0a0a0;
+      color: #000000;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
