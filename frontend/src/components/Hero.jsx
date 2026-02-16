@@ -17,7 +17,7 @@ const Hero = () => {
                         </div>
                         <div className="hero-column">
                               <div className="image-wrapper">
-                                    <img src="/images/event_2.png" alt="AI Speaker" />
+                                    <img src="/images/event2.jpg" alt="AI Speaker" />
                                     <div className="overlay"></div>
                               </div>
                         </div>
