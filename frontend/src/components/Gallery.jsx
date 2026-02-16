@@ -6,18 +6,18 @@ const Gallery = () => {
 
       // Gallery images data
       const galleryImages = [
-            { id: 1, src: '/images/events/event1.jpg', title: 'Tech Workshop 2024' },
-            { id: 2, src: '/images/events/event2.jpg', title: 'Fetch.ai Hackathon' },
-            { id: 3, src: '/images/events/event3.jpg', title: 'AI Development Session' },
-            { id: 4, src: '/images/events/event4.jpg', title: 'Team Collaboration' },
-            { id: 5, src: '/images/events/event5.jpg', title: 'Innovation Seminar' },
-            { id: 6, src: '/images/events/event6.jpg', title: 'Project Presentation' },
-            { id: 7, src: '/images/events/event7.jpg', title: 'Coding Bootcamp' },
-            { id: 8, src: '/images/events/event8.jpg', title: 'Tech Talk Series' },
-            { id: 9, src: '/images/events/event9.jpg', title: 'Community Meetup' },
-            { id: 10, src: '/images/events/event10.jpg', title: 'Developer Conference' },
-            { id: 11, src: '/images/events/event11.jpg', title: 'Workshop Session' },
-            { id: 12, src: '/images/events/event12.jpg', title: 'Innovation Day' },
+            { id: 1, src: '/events/20251124_174843.jpg', title: 'Event Highlight' },
+            { id: 2, src: '/events/IMG_20251121_183330877.jpg', title: 'Community Gathering' },
+            { id: 3, src: '/events/IMG_20251121_184504.jpg', title: 'Fetch.ai Session' },
+            { id: 4, src: '/events/IMG_20251123_160033031.jpg', title: 'Group Activity' },
+            { id: 5, src: '/events/IMG_20251125_164343.jpg', title: 'Workshop Highlight' },
+            { id: 6, src: '/events/IMG_20251125_171329841.jpg', title: 'Team Discussion' },
+            { id: 7, src: '/events/IMG_20251125_171536%20(1).jpg', title: 'Innovative Ideas' },
+            { id: 8, src: '/events/IMG_20251125_171536.jpg', title: 'Project Showcase' },
+            { id: 9, src: '/events/IMG_20251125_180805017.jpg', title: 'Networking' },
+            { id: 10, src: '/events/IMG_20251125_195432909.jpg', title: 'Event Closing' },
+            { id: 11, src: '/events/IMG_20250911_180542.jpg', title: 'Event Closing' },
+            { id: 12, src: '/events/IMG_20250911_181215_1.jpg', title: 'Event Closing' },
       ];
 
       const openLightbox = (image) => {

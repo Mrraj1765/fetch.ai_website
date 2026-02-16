@@ -1,32 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import About from './components/About'
-import Teams from './components/Teams'
-import Gallery from './components/Gallery'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Teams from './components/Teams';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import MissionVision from './components/MissionVision';
+import FAQ from './components/FAQ';
+import TeamsPage from './pages/TeamsPage';
+import GalleryPage from './pages/GalleryPage';
 
+// Home Component to group the landing page sections
+const Home = () => (
+  <>
+    <Hero />
+    <About />
+    <MissionVision />
+    <Teams />
+    <Gallery />
+    <FAQ />
+    <Contact />
+  </>
+);
 
-// jste router use nahi kele ahe ajun 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="app">
-      <Header />
-      <main className="main-content">
-        <Hero />
-        <About />
-        <Teams />
-        <Gallery />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
-  )
+    <Router>
+      <div className="app">
+        <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/teams" element={<TeamsPage />} />
+            <Route path="/events" element={<GalleryPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
-// this componet export succesfull ok 
-export default App
+
+export default App;

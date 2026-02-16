@@ -1,5 +1,5 @@
 .teams-section {
-      padding: 40px 2rem;
+      padding: 60px 2rem;
       background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
       display: flex;
       justify-content: center;
@@ -8,16 +8,16 @@
 }
 
 .teams-container {
-      max-width: 800px;
+      max-width: 1200px;
       width: 100%;
 }
 
 .teams-title {
-      font-size: 1.8rem;
+      font-size: 2.5rem;
       font-weight: 800;
       text-align: center;
       color: #1a1a2e;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
       font-family: 'Inter', sans-serif;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -26,8 +26,8 @@
 .leadership-section {
       display: flex;
       justify-content: center;
-      gap: 3rem;
-      padding: 2rem 2rem;
+      gap: 5rem;
+      padding: 3rem 2rem;
       background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -38,9 +38,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.6rem;
+      gap: 1rem;
       transition: transform 0.4s ease;
-      padding: 0.3rem;
+      padding: 1.5rem;
 }
 
 .leader-card:hover {
@@ -48,11 +48,11 @@
 }
 
 .leader-image-wrapper {
-      width: 100px;
-      height: 100px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       overflow: hidden;
-      border: 3px solid #ffffff;
+      border: 4px solid #ffffff;
       box-shadow: 0 8px 20px rgba(26, 26, 46, 0.1);
       transition: all 0.4s ease;
       position: relative;
@@ -70,26 +70,26 @@
 }
 
 .leader-card h3 {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       font-weight: 700;
       color: #1a1a2e;
-      margin: 0.2rem 0 0 0;
+      margin: 0.5rem 0 0 0;
       text-align: center;
 }
 
 .leader-role {
-      font-size: 0.75rem;
+      font-size: 0.95rem;
       color: #6c757d;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
+      letter-spacing: 1.5px;
       margin: 0;
 }
 
 .leader-socials {
       display: flex;
-      gap: 0.6rem;
-      margin-top: 0.4rem;
+      gap: 1rem;
+      margin-top: 0.8rem;
 }
 
 /* LinkedIn Brand Color */

@@ -32,6 +32,7 @@ const About = () => {
                                           <span className="stat-number">10+</span>
                                           <span className="stat-label">Events</span>
                                     </div>
+                                    
                               </div>
                         </div>
                   </div>
