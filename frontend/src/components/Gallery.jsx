@@ -16,6 +16,8 @@ const Gallery = () => {
             { id: 8, src: '/events/IMG_20251125_171536.jpg', title: 'Project Showcase' },
             { id: 9, src: '/events/IMG_20251125_180805017.jpg', title: 'Networking' },
             { id: 10, src: '/events/IMG_20251125_195432909.jpg', title: 'Event Closing' },
+            { id: 11, src: '/events/IMG_20250911_180542.jpg', title: 'Event Closing' },
+            { id: 12, src: '/events/IMG_20250911_181215_1.jpg', title: 'Event Closing' },
       ];
 
       const openLightbox = (image) => {

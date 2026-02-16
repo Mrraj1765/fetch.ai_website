@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import MissionVision from './components/MissionVision';
 import FAQ from './components/FAQ';
 import TeamsPage from './pages/TeamsPage';
+import GalleryPage from './pages/GalleryPage';
 
 // Home Component to group the landing page sections
 const Home = () => (
@@ -33,6 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/teams" element={<TeamsPage />} />
+            <Route path="/events" element={<GalleryPage />} />
           </Routes>
         </main>
         <Footer />

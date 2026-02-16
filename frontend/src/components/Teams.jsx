@@ -7,14 +7,14 @@ const Teams = () => {
             {
                   name: "Vinit",
                   role: "Head",
-                  image: "/images/vinit.jpg",
+                  image: "/team/head.png",
                   linkedin: "https://linkedin.com/in/username",
                   github: "https://github.com/username"
             },
             {
                   name: "Raj",
                   role: "Co-Head",
-                  image: "/images/raj.jpg",
+                  image: "/team/cohead.png",
                   linkedin: "https://linkedin.com/in/username",
                   github: "https://github.com/username"
             }

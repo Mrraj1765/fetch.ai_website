@@ -1,282 +1,66 @@
-/* Global Teams Page Styles */
-.teams-page-container {
-      background-color: #ffffff;
-      min-height: 100vh;
-      font-family: 'Inter', sans-serif;
-      color: #1e293b;
-}
-
 .teams-section {
       padding: 60px 2rem;
-      background: #f8fafc;
-      width: 100%;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
       display: flex;
       justify-content: center;
-}
-
-.teams-section.full-page {
-      padding: 120px 2rem 60px;
-      /* Increased top padding to clear navbar */
-      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
+      align-items: center;
+      position: relative;
 }
 
 .teams-container {
       max-width: 1200px;
       width: 100%;
-      margin: 0 auto;
-      /* Ensure container is centered */
 }
 
-/* Header Section */
-.teams-header-minimal {
-      margin-bottom: 4rem;
-      text-align: center;
-      position: relative;
-}
-
-.minimal-title {
-      font-size: 3rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0;
-      color: #0f172a;
-      display: inline-block;
-      position: relative;
-}
-
-.title-underline {
-      width: 60px;
-      height: 4px;
-      background: #3b82f6;
-      margin: 1rem auto 0;
-      border-radius: 2px;
-}
-
-/* Filter Section */
-.team-filter {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-bottom: 3.5rem;
-}
-
-.filter-btn {
-      padding: 10px 24px;
-      background: #f1f5f9;
-      border: 1px solid transparent;
-      border-radius: 50px;
-      color: #64748b;
-      font-weight: 600;
-      font-size: 0.95rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-}
-
-.filter-btn:hover {
-      background: #e2e8f0;
-      color: #334155;
-      transform: translateY(-2px);
-}
-
-.filter-btn.active {
-      background: #1e293b;
-      color: #ffffff;
-      box-shadow: 0 4px 12px rgba(30, 41, 59, 0.2);
-}
-
-/* Members Grid */
-.members-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 2.5rem;
-}
-
-.member-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-}
-
-.member-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-      /* Soft, professional shadow */
-      border-color: transparent;
-}
-
-/* Image Wrapper */
-.member-image-wrapper {
-      width: 110px;
-      height: 110px;
-      margin: 0 auto 1.5rem;
-      border-radius: 50%;
-      padding: 4px;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      position: relative;
-      transition: all 0.3s ease;
-}
-
-.member-image-wrapper img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-      filter: grayscale(10%);
-      /* Subtle professional touch */
-      transition: all 0.3s ease;
-}
-
-.member-card:hover .member-image-wrapper {
-      border-color: #3b82f6;
-}
-
-.member-card:hover .member-image-wrapper img {
-      filter: grayscale(0%);
-}
-
-/* Member Info */
-.member-info h4 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #0f172a;
-      margin: 0 0 0.5rem;
-}
-
-.member-info p {
-      font-size: 0.9rem;
-      color: #64748b;
-      font-weight: 500;
-      margin-bottom: 0;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-}
-
-/* Social Icons */
-.member-socials {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1.5rem;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.3s ease;
-}
-
-.member-card:hover .member-socials {
-      opacity: 1;
-      transform: translateY(0);
-}
-
-.social-link {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f8fafc;
-      color: #64748b;
-      border: 1px solid #e2e8f0;
-      transition: all 0.2s ease;
-}
-
-.social-link:hover {
-      background: #3b82f6;
-      border-color: #3b82f6;
-      color: white;
-      transform: translateY(-2px);
-}
-
-.social-link:nth-child(2):hover {
-      background: #000000;
-      border-color: #000000;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-      .minimal-title {
-            font-size: 2.2rem;
-      }
-
-      .teams-section.full-page {
-            padding: 40px 1.5rem;
-      }
-
-      .team-filter {
-            gap: 0.6rem;
-      }
-
-      .filter-btn {
-            padding: 8px 16px;
-            font-size: 0.85rem;
-      }
-
-      .member-socials {
-            opacity: 1;
-            transform: translateY(0);
-            margin-top: 1.2rem;
-      }
-}
-
-/* Homepage Leadership Section Styles (Kept consistent) */
 .teams-title {
       font-size: 2.5rem;
       font-weight: 800;
       text-align: center;
-      margin-bottom: 3rem;
-      color: #0f172a;
-      /* Dark text */
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      background: none;
-      -webkit-text-fill-color: initial;
+      color: #1a1a2e;
+      margin-bottom: 2.5rem;
+      font-family: 'Inter', sans-serif;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Leadership Section */
 .leadership-section {
       display: flex;
       justify-content: center;
-      gap: 3rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
+      gap: 5rem;
+      padding: 3rem 2rem;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .leader-card {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 280px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #e2e8f0;
+      gap: 1rem;
+      transition: transform 0.4s ease;
+      padding: 1.5rem;
 }
 
 .leader-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      transform: translateY(-6px);
 }
 
 .leader-image-wrapper {
-      width: 120px;
-      height: 120px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       overflow: hidden;
-      margin-bottom: 1rem;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border: 4px solid #ffffff;
+      box-shadow: 0 8px 20px rgba(26, 26, 46, 0.1);
+      transition: all 0.4s ease;
+      position: relative;
+}
+
+.leader-card:hover .leader-image-wrapper {
+      box-shadow: 0 12px 25px rgba(26, 26, 46, 0.18);
+      transform: scale(1.05);
 }
 
 .leader-image-wrapper img {
@@ -286,34 +70,143 @@
 }
 
 .leader-card h3 {
-      font-size: 1.5rem;
-      color: #0f172a;
-      margin: 0.5rem 0 0.2rem;
+      font-size: 1.6rem;
       font-weight: 700;
+      color: #1a1a2e;
+      margin: 0.5rem 0 0 0;
+      text-align: center;
 }
 
 .leader-role {
-      color: #64748b;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      color: #6c757d;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
+      letter-spacing: 1.5px;
+      margin: 0;
 }
 
 .leader-socials {
       display: flex;
       gap: 1rem;
+      margin-top: 0.8rem;
 }
 
-.leader-socials .social-link {
-      background: #f1f5f9;
-      color: #64748b;
-      border: 1px solid #e2e8f0;
+/* LinkedIn Brand Color */
+.social-link:nth-child(1) {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #0077B5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 12px rgba(0, 119, 181, 0.2);
 }
 
-.leader-socials .social-link:hover {
-      background: #3b82f6;
-      color: white;
-      border-color: #3b82f6;
+.social-link:nth-child(1):hover {
+      background: #005885;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 119, 181, 0.35);
+}
+
+/* GitHub Brand Color */
+.social-link:nth-child(2) {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #24292e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 12px rgba(36, 41, 46, 0.2);
+}
+
+.social-link:nth-child(2):hover {
+      background: #0d1117;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(36, 41, 46, 0.35);
+}
+
+.social-link svg {
+      width: 18px;
+      height: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+      .teams-section {
+            padding: 35px 1.5rem;
+      }
+
+      .teams-title {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+      }
+
+      .leadership-section {
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem 1.5rem;
+            border-radius: 18px;
+      }
+
+      .leader-image-wrapper {
+            width: 90px;
+            height: 90px;
+      }
+
+      .leader-card h3 {
+            font-size: 1.1rem;
+      }
+}
+
+@media (max-width: 640px) {
+      .teams-section {
+            padding: 30px 1rem;
+      }
+
+      .teams-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+      }
+
+      .leadership-section {
+            gap: 1.5rem;
+            padding: 1.5rem 1rem;
+            border-radius: 15px;
+      }
+
+      .leader-image-wrapper {
+            width: 85px;
+            height: 85px;
+            border-width: 2px;
+      }
+
+      .leader-card h3 {
+            font-size: 1rem;
+      }
+
+      .leader-role {
+            font-size: 0.7rem;
+      }
+
+      .social-link:nth-child(1),
+      .social-link:nth-child(2) {
+            width: 32px;
+            height: 32px;
+      }
+
+      .social-link svg {
+            width: 16px;
+            height: 16px;
+      }
+
+      .leader-socials {
+            gap: 0.5rem;
+      }
 }

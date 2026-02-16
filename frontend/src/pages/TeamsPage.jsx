@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import '../components/Teams.css';
+import './TeamsPage.css';
 
 const TeamsPage = () => {
       const [selectedCategory, setSelectedCategory] = useState("All Members");
 
       // Members dummy data with social links
       const members = [
-            { name: "John Doe", role: "Technical Lead", category: "Technical", image: "/images/member1.jpg", linkedin: "#", github: "#" },
-            { name: "Jane Smith", role: "Event Manager", category: "Management", image: "/images/member2.jpg", linkedin: "#", github: "#" },
-            { name: "Alice Johnson", role: "Content Writer", category: "Documentation", image: "/images/member3.jpg", linkedin: "#", github: "#" },
-            { name: "Bob Brown", role: "PR Specialist", category: "Public Relation", image: "/images/member4.jpg", linkedin: "#", github: "#" },
-            { name: "Charlie Davis", role: "UI/UX Designer", category: "Design & Media", image: "/images/member5.jpg", linkedin: "#", github: "#" },
-            { name: "Eva White", role: "Developer", category: "Technical", image: "/images/member6.jpg", linkedin: "#", github: "#" },
-            { name: "Frank Miller", role: "Coordinator", category: "Management", image: "/images/member7.jpg", linkedin: "#", github: "#" },
-            { name: "Grace Wilson", role: "Editor", category: "Documentation", image: "/images/member8.jpg", linkedin: "#", github: "#" },
-            { name: "Henry Taylor", role: "Social Media Manager", category: "Public Relation", image: "/images/member9.jpg", linkedin: "#", github: "#" },
-            { name: "Ivy Thomas", role: "Graphic Designer", category: "Design & Media", image: "/images/member10.jpg", linkedin: "#", github: "#" },
+            { name: "Yash Chavan", role: "Technical Team", category: "Technical", image: "/team/yash-tech.png", linkedin: "#", github: "#" },
+            { name: "Krushna Patil", role: "Documantation", category: "Documentation", image: "/team/krushna-doc.png", linkedin: "#", github: "#" },
+            { name: "Tejas Patil", role: "Technical Team", category: "Technical", image: "/team/tejas-tech.png", linkedin: "#", github: "#" },
+            // { name: "Bob Brown", role: "PR Specialist", category: "Public Relation", image: "/images/member4.jpg", linkedin: "#", github: "#" },
+            // { name: "Charlie Davis", role: "UI/UX Designer", category: "Design & Media", image: "/images/member5.jpg", linkedin: "#", github: "#" },
+            // { name: "Eva White", role: "Developer", category: "Technical", image: "/images/member6.jpg", linkedin: "#", github: "#" },
+            // { name: "Frank Miller", role: "Coordinator", category: "Management", image: "/images/member7.jpg", linkedin: "#", github: "#" },
+            // { name: "Grace Wilson", role: "Editor", category: "Documentation", image: "/images/member8.jpg", linkedin: "#", github: "#" },
+            // { name: "Henry Taylor", role: "Social Media Manager", category: "Public Relation", image: "/images/member9.jpg", linkedin: "#", github: "#" },
+            // { name: "Ivy Thomas", role: "Graphic Designer", category: "Design & Media", image: "/images/member10.jpg", linkedin: "#", github: "#" },
       ];
 
       const categories = ["All Members", "Technical", "Management", "Documentation", "Public Relation", "Design & Media"];
