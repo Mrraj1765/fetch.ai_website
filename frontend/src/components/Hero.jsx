@@ -17,25 +17,27 @@ const Hero = () => {
                         </div>
                         <div className="hero-column">
                               <div className="image-wrapper">
-                                    <img src="/images/event2.jpg" alt="AI Speaker" />
+                                    <img src="/images/event3.jpg" alt="AI Speaker" />
                                     <div className="overlay"></div>
                               </div>
                         </div>
                         <div className="hero-column">
                               <div className="image-wrapper">
-                                    <img src="/images/event_3.png" alt="Robotics Hand" />
+                                    <img src="/images/event2.jpg" alt="Robotics Hand" />
                                     <div className="overlay"></div>
                               </div>
                         </div>
                         <div className="hero-column">
                               <div className="image-wrapper">
-                                    <img src="/images/event_4.png" alt="Team Collaboration" />
+                                    <img src="/images/event4.jpg" alt="Team Collaboration" />
                                     <div className="overlay"></div>
                               </div>
                         </div>
                   </div>
 
                   <div className="hero-content">
+                        <h1 className="hero-title">Fetch.ai Developer Club</h1>
+                        <p className="hero-quote">"Building the future of AI, one agent at a time."</p>
                         <button className="view-all-btn">
                               View all events
                               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,6 +45,7 @@ const Hero = () => {
                                     <path d="M12 5L19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                               </svg>
                         </button>
+
                   </div>
             </section>
       );

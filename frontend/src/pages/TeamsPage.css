@@ -1,17 +1,9 @@
-/* Global Teams Page Styles */
+/* Dedicated Teams Page Styles */
 .teams-page-container {
       background-color: #ffffff;
       min-height: 100vh;
       font-family: 'Inter', sans-serif;
       color: #1e293b;
-}
-
-.teams-section {
-      padding: 60px 2rem;
-      background: #f8fafc;
-      width: 100%;
-      display: flex;
-      justify-content: center;
 }
 
 .teams-section.full-page {
@@ -27,7 +19,6 @@
       max-width: 1200px;
       width: 100%;
       margin: 0 auto;
-      /* Ensure container is centered */
 }
 
 /* Header Section */
@@ -227,93 +218,4 @@
             transform: translateY(0);
             margin-top: 1.2rem;
       }
-}
-
-/* Homepage Leadership Section Styles (Kept consistent) */
-.teams-title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      text-align: center;
-      margin-bottom: 3rem;
-      color: #0f172a;
-      /* Dark text */
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      background: none;
-      -webkit-text-fill-color: initial;
-}
-
-.leadership-section {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-}
-
-.leader-card {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 280px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #e2e8f0;
-}
-
-.leader-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-.leader-image-wrapper {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-bottom: 1rem;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-.leader-image-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-}
-
-.leader-card h3 {
-      font-size: 1.5rem;
-      color: #0f172a;
-      margin: 0.5rem 0 0.2rem;
-      font-weight: 700;
-}
-
-.leader-role {
-      color: #64748b;
-      font-size: 0.9rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-}
-
-.leader-socials {
-      display: flex;
-      gap: 1rem;
-}
-
-.leader-socials .social-link {
-      background: #f1f5f9;
-      color: #64748b;
-      border: 1px solid #e2e8f0;
-}
-
-.leader-socials .social-link:hover {
-      background: #3b82f6;
-      color: white;
-      border-color: #3b82f6;
 }
