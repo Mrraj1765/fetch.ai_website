@@ -55,7 +55,7 @@ const Hero = () => {
                               </a>
                         </div>
 
-                        <div className="hero-stats">
+                        {/* <div className="hero-stats">
                               <div className="stat-item">
                                     <div className="stat-number">50+</div>
                                     <div className="stat-label">Active Members</div>
@@ -70,15 +70,15 @@ const Hero = () => {
                                     <div className="stat-number">10+</div>
                                     <div className="stat-label">Projects Built</div>
                               </div>
-                        </div>
+                        </div> */}
                   </div>
 
-                  <div className="scroll-indicator">
+                  {/* <div className="scroll-indicator">
                         <div className="scroll-mouse">
                               <div className="scroll-wheel"></div>
                         </div>
                         <span>Scroll to explore</span>
-                  </div>
+                  </div> */}
             </section>
       );
 };
